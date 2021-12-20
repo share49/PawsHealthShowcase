@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DatePickerCell" rowHeight="181" id="KGk-i7-Jjw" customClass="DatePickerCell" customModule="Paws_Health" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="481" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="tx8-k6-X3t">
+                        <rect key="frame" x="30" y="31" width="421" height="150"/>
+                        <date key="minimumDate" timeIntervalSinceReferenceDate="204804000">
+                            <!--2007-06-29 10:00:00 +0000-->
+                        </date>
+                    </datePicker>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr3-lN-WkH">
+                        <rect key="frame" x="30" y="6" width="421" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="eRW-kQ-ghi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tx8-k6-X3t" firstAttribute="top" secondItem="Xr3-lN-WkH" secondAttribute="bottom" id="CWQ-Bf-sW9"/>
+                    <constraint firstAttribute="trailing" secondItem="Xr3-lN-WkH" secondAttribute="trailing" constant="30" id="FwN-R2-QLg"/>
+                    <constraint firstItem="Xr3-lN-WkH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Min-Dc-opP"/>
+                    <constraint firstItem="tx8-k6-X3t" firstAttribute="trailing" secondItem="Xr3-lN-WkH" secondAttribute="trailing" id="Mmv-QV-SKg"/>
+                    <constraint firstItem="tx8-k6-X3t" firstAttribute="leading" secondItem="Xr3-lN-WkH" secondAttribute="leading" id="aw0-xy-gxI"/>
+                    <constraint firstAttribute="bottom" secondItem="tx8-k6-X3t" secondAttribute="bottom" id="jQK-6D-WI2"/>
+                    <constraint firstItem="Xr3-lN-WkH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="lOZ-LG-Pcb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ctBottomMargin" destination="jQK-6D-WI2" id="0F0-8e-8ie"/>
+                <outlet property="ctTopMarginDatePicker" destination="CWQ-Bf-sW9" id="PV7-UW-kRN"/>
+                <outlet property="datePicker" destination="tx8-k6-X3t" id="nBj-kp-1vE"/>
+                <outlet property="lblTitle" destination="Xr3-lN-WkH" id="kgt-Gv-psr"/>
+            </connections>
+            <point key="canvasLocation" x="257.24637681159425" y="199.21875"/>
+        </tableViewCell>
+    </objects>
+</document>

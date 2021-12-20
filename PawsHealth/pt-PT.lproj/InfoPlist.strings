@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  PawsHealth
+
+  Created by Pinto Diaz, Roger on 9/19/20.
+  Copyright © 2020 Hoowie. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "Precisamos acessar a galeria de fotos para que você possa selecionar a foto do seu animal de estimação.";
